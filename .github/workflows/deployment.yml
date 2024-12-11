@@ -46,4 +46,8 @@ jobs:
       - name: Build Project
         run: npm run build
       - name: Deploy
-        run: echo "Deploying...."
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: webapp-deploy-esp
+#          slot-name: 
+          publish-profile:  ${{ secrets.AZURE_CREDENTIALS }}
