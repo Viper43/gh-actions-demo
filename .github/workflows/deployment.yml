@@ -48,6 +48,6 @@ jobs:
       - name: Deploy
         uses: azure/webapps-deploy@v2
         with:
-          app-name: webapp-deploy-esp
+          app-name: react-poc
 #          slot-name: 
-          publish-profile:  ${{ secrets.AZURE_CREDENTIALS }}
+          publish-profile:  ${{ secrets.AZURE_PUBLISH_PROFILE }}
