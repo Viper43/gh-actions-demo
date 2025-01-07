@@ -48,6 +48,6 @@ jobs:
       - name: Deploy
         uses: azure/webapps-deploy@v2
         with:
-          app-name: react-ui-app-linux
+          app-name: my-web-app-test
 #          slot-name: 
-          publish-profile:  ${{ secrets.AZURE_PUBLISH_PROFILE }}
+          publish-profile:  ${{ secrets.AZURE_MY_WEB_APP_PUBLISH_PROFILE }}
